@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#btn").click(function () {
+    $("#btn").click(function getJokes() {
         $.ajax({
         method: 'GET',
         url: 'https://api.api-ninjas.com/v1/jokes',
@@ -12,7 +12,8 @@ $(document).ready(function() {
     },
     error: function ajaxError(jqXHR) {
         console.error('Error: ', jqXHR.responseText);
-    }
-});
+        }
     });
+    });
+    getJokes()
 });
