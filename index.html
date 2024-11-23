@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet"/>
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+</head>
+<style>
+  #btn {
+    cursor: pointer;
+  }
+</style>
+<body>
+  <section class="vh-100 bg-body-tertiary">
+    <div class="container py-5 h-100">
+      <h3 class="text-center">
+        Get a random Joke
+        <small class="text-muted"><i class="far fa-face-grin"></i></small>
+      </h3>
+      <div class="row d-flex flex-row justify-content-center align-items-center h-100">
+        <div class="col-md-10 col-xl-5">
+  
+          <div class="card text-white" style="background-color: #1f959b; border-radius: 15px;">
+            <div class="card-body p-5">
+  
+              <i class="fas fa-quote-left fa-2x mb-4"></i>
+  
+              <p class="lead" id="joke"></p>
+  
+              <hr>
+  
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">Jokes</p>
+                <h6 class="mb-0"><span class="badge rounded-pill"
+                    style="background-color: rgba(0,0,0, 0.2);"></span> <i class="fas fa-face-grin-tongue-wink"></i><i class="fas fa-face-grin-tongue-wink"></i><i class="fas fa-face-grin-tongue-wink"></i>
+                </h6>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <i class="fas fa-angles-right pointer-event" id="btn"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
